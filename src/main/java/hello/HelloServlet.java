@@ -99,8 +99,8 @@ public class HelloServlet extends HttpServlet {
             out.println("<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n" +
                     "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n" +
                     "<link href=\"https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap\" rel=\"stylesheet\">");
-            out.println(Layout.createLayout());
             out.println("</head>");
+            out.println(Layout.createLayout());
             out.println("<body>");
             out.println("<h1>Servlet HelloServlet</h1>");
             out.println("<p>" + msg + "</p>");
@@ -164,9 +164,9 @@ public class HelloServlet extends HttpServlet {
             out.println("<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n" +
                     "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n" +
                     "<link href=\"https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap\" rel=\"stylesheet\">");
-            out.println(Layout.createLayout());
             out.println("</head>");
             out.println("<body>");
+            out.println(Layout.createLayout());
             out.println("<h1>Servlet HelloServlet</h1>");
             out.println("<p>" + msg + "</p>");
             out.println(new Clock().geraRelogioHTML());
