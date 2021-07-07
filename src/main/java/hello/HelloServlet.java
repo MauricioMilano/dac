@@ -66,19 +66,19 @@ public class HelloServlet extends HttpServlet {
             lang = "pt";
         switch(lang){
             case "pt":
-                msg = "Alô, ";
+                msg = "Alô";
                 break;
             case "en":
-                msg = "Hello, ";
+                msg = "Hello";
                 break;
             case "fr":
-                msg = "Bonjour, ";
+                msg = "Bonjour";
                 break;
             case "es":
-                msg = "Hola, ";
+                msg = "Hola";
                 break;
             case "el":
-                msg = "γεια, ";
+                msg = "γεια";
                 break;
         }
         
@@ -87,7 +87,7 @@ public class HelloServlet extends HttpServlet {
         if(nome==null)
             nome = "Fulano";
         
-        msg = msg+nome+"!";
+        msg = msg+", "+nome+"!";
 
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
@@ -123,22 +123,22 @@ public class HelloServlet extends HttpServlet {
             lang = "pt";
         switch(lang){
             case "pt":
-                msg = "Alô, ";
+                msg = "Alô";
                 break;
             case "en":
-                msg = "Hello, ";
+                msg = "Hello";
                 break;
             case "fr":
-                msg = "Bonjour, ";
+                msg = "Bonjour";
                 break;
             case "de":
-                msg = "Hallo, ";
+                msg = "Hallo";
                 break;
             case "es":
-                msg = "Hola, ";
+                msg = "Hola";
                 break;
             case "el":
-                msg = "γεια, ";
+                msg = "γεια";
                 break;
         }
         
@@ -147,7 +147,7 @@ public class HelloServlet extends HttpServlet {
         if(nome==null)
             nome = "Fulano";
         
-        msg = msg+nome+"!";
+        msg = msg+", "+nome+"!";
 
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
