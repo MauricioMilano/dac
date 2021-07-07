@@ -96,9 +96,7 @@ public class HelloServlet extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet HelloServlet</title>");
-            out.println("<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n" +
-                    "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n" +
-                    "<link href=\"https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap\" rel=\"stylesheet\">");
+            out.println(Layout.importFonts());
             out.println("</head>");
             out.println(Layout.createLayout());
             out.println("<body>");
