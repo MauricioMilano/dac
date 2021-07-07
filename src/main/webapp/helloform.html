@@ -9,19 +9,55 @@ and open the template in the editor.
         <title>Formulário de HelloWorld (usando o HelloServlet.java)</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap" rel="stylesheet">
+        <style>
+            p, h1 {
+                color: #17D4FE;
+                font-size: 60px;
+                font-family: Tourney;
+                letter-spacing: 7px;
+                text-align: center;
+            }
+            .radio {
+                width: 30px;
+                height: 30px;
+                color: #17D4FE;
+            }
+            .text {
+                width: 300px;
+                height: 40px;
+                background: none;
+                border-radius: 5%;
+                font-size: 30px;
+                border: 3px solid white;
+                color: #17D4FE;
+                font-family: 'Tourney';
+            }
+            form {
+                color: white;
+                font-family: tourney;
+                font-size: 30px;
+            }
+            body {
+                background: black;
+            }
+        </style>
     </head>
     <body>
         <div>Formulário de HelloWorld (usando o HelloServlet.java)</div>
            <form action="alomundo" method="post">
-           <br>Idioma: <input type="radio" name="lang" value="pt" checked> Português
-           <input type="radio" name="lang" value="en"> Inglês
-           <input type="radio" name="lang" value="fr"> Francês
-           <input type="radio" name="lang" value="de"> Alemão
-           <input type="radio" name="lang" value="es"> Espanhol
-           <input type="radio" name="lang" value="el"> Grego
+               Para continuar, escolha seu idioma:
+           <br> <br> <input class="radio" type="radio" name="lang" value="pt" checked> Português<br>
+           <input class="radio" type="radio" name="lang" value="en"> Inglês<br>
+           <input class="radio" type="radio" name="lang" value="fr"> Francês<br>
+           <input class="radio" type="radio" name="lang" value="de"> Alemão<br>
+           <input class="radio" type="radio" name="lang" value="es"> Espanhol<br>
+           <input class="radio" type="radio" name="lang" value="el"> Grego<br>
 
                <br><br>
-           Nome: <input type="text" name="nome"/><br><br>
+           Nome: <input type="text" class="text" name="nome"/><br><br>
            <input type="submit" value="Cumprimentar"/>
         </form>
 

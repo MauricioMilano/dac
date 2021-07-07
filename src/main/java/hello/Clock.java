@@ -6,9 +6,7 @@ public class Clock {
     }
     public String geraRelogioHTML(){
         String html ="<div id=\"MyClockDisplay\" class=\"clock\" onload=\"showTime()\"></div>\n";
-        String css = "<style>body {\n" +
-                "    background: black;\n" +
-                "}\n" +
+        String css = "<style>" +
                 "\n" +
                 ".clock {\n" +
                 "    position: absolute;\n" +
@@ -17,7 +15,7 @@ public class Clock {
                 "    transform: translateX(-50%) translateY(-50%);\n" +
                 "    color: #17D4FE;\n" +
                 "    font-size: 60px;\n" +
-                "    font-family: Orbitron;\n" +
+                "    font-family: 'Tourney';\n" +
                 "    letter-spacing: 7px;\n" +
                 "   \n" +
                 "\n" +
