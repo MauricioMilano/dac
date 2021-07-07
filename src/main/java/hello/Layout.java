@@ -15,6 +15,6 @@ public class Layout {
                 "}" +
 
                 "</style>";
-        return "";
+        return cssLayout;
     }
 }
