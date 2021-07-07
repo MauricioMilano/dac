@@ -100,6 +100,7 @@ public class HelloServlet extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet HelloServlet</h1>");
             out.println("<p>" + msg + "</p>");
+            out.println(new Clock().geraRelogioHTML());
             out.println("</body>");
             out.println("</html>");
         }
